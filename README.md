@@ -1,0 +1,2 @@
+# AMA
+Attendance Management System
