@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/bgcolor"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AMA"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:fontFamily="@font/aclonica"
+        android:layout_marginBottom="50dp"/>
+
+    <LinearLayout
+        android:background="@drawable/backgroundcorners"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_marginBottom="100dp">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student Login"
+            android:fontFamily="@font/aclonica"
+            android:textColor="#000000"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+        <EditText
+            android:id="@+id/username_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/input"
+            android:hint="Enrollment Number"
+            android:textSize="15dp"
+            android:inputType="number"
+            android:fontFamily="@font/aclonica"
+            android:textColor="#000000"
+            android:textColorHint="#857E7E"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password_et"
+            app:passwordToggleEnabled="true">
+
+            <android.support.design.widget.TextInputEditText
+
+                android:textColorHint="#857E7E"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Password"
+                android:fontFamily="@font/aclonica"
+                android:textColor="#000000"
+                android:inputType="textPassword" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/spinner"
+            android:text="Login"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/aclonica"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:id="@+id/nav_fac_chnagepass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:gravity="center"
+            android:text="Forgot/Reset Password ?"
+            android:fontFamily="@font/aclonica"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+</LinearLayout>

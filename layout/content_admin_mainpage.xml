@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin_mainpage"
+    android:gravity="center"
+    android:background="@drawable/bgcolor"
+    tools:showIn="@layout/app_bar_admin_mainpage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="435dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/bgcolor"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/addfaculty_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/loginapagespinner"
+            android:text="Add Faculty"
+            android:fontFamily="@font/aclonica"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/removefaculty_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/loginapagespinner"
+            android:text="Remove Faculty"
+            android:fontFamily="@font/aclonica"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/addstudent_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/loginapagespinner"
+            android:text="Add Student"
+            android:fontFamily="@font/aclonica"
+            android:textColor="#000000"  />
+
+        <Button
+            android:id="@+id/removestudent_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/loginapagespinner"
+            android:text="Remove Student"
+            android:fontFamily="@font/aclonica"
+            android:textColor="#000000"  />
+
+        <Button
+            android:id="@+id/addsbject_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/loginapagespinner"
+            android:text="Add Subject"
+            android:fontFamily="@font/aclonica"
+            android:textColor="#000000"  />
+
+        <Button
+            android:id="@+id/baclog_regby_admin_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/loginapagespinner"
+            android:text="Backlog Registration"
+            android:fontFamily="@font/aclonica"
+            android:textColor="#000000"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+</LinearLayout>

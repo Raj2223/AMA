@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgcolor"
+    android:id="@+id/splash"
+    tools:context=".splashscreen">
+
+
+    <LinearLayout
+        android:id="@+id/logo_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+
+    <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/splashlogo"
+            />
+        <TextView
+            android:id="@+id/splashtext"
+            android:layout_below="@+id/logo"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:text="AMA"
+            android:fontFamily="@font/aclonica"
+            android:textColor="#000000"/>
+        <TextView
+            android:textAlignment="textEnd"
+            android:id="@+id/bel_tv"
+            android:layout_below="@id/splashtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aclonica"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:text="Starting..."/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:gravity="bottom"
+        android:layout_below="@id/logo_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_30"
+        android:fontFamily="@font/aclonica"
+        android:textColor="#000000"
+        app:indicatorColor="@android:color/white"
+        app:indicatorName="BallPulseIndicator" />
+
+
+</RelativeLayout>
